@@ -1,0 +1,233 @@
+,subreddit,title,selftext,upvote_ratio,ups,downs,score
+0,websec,A Beginners Introduction To Shodan,,0.57,1,0,1
+1,websec,chromium-based DOM-XSS Detection,,1.0,4,0,4
+2,websec,A talk with the CloudSek founder,"Rahul Sasi, will share his journey and how can new people look out to venture in this field.  
+I know many CyberSec enthusiasts like me will be interested for this.  
+So here's the link:  
+[https://youtu.be/OQtuVKRVh\_k](https://youtu.be/OQtuVKRVh_k)",1.0,2,0,2
+3,websec,A question about eWPTXv2 exam,"Hello,i have a question
+
+In the [eWPTXv2 ](https://elearnsecurity.com/product/ewptxv2-certification/)exam,,is it enough just to detect the vulnerability (e.g an error message implies that there is SQLI),or should i also exploit it(e.g extract some data from the database)",1.0,2,0,2
+4,websec,Alternatives to CAPTCHA for Deterring Bots,"I've been toying with using browser fingerprinting to augment proof of work invisible challenges and wanted to share a quick demo I made:  [https://pow-browser-fingerprinting-demo.com/](https://pow-browser-fingerprinting-demo.com/).  The value proposition is simple: many websites today use CAPTCHA challenges (like those annoying questions asking you to select all the images that contain traffic lights) or use rate limiting as a shotgun approach to deter botting and prevent DDoS attacks on their websites. These approaches aren’t super effective and add a ton of friction to a user’s experience. Forbes published [an article](https://www.forbes.com/sites/forbestechcouncil/2019/08/07/your-captcha-could-be-hurting-your-sales/?sh=4e762c1b33c8) highlighting how expected dropoff can be anywhere between 8-29% with a negative impact on sales conversion of \~3.2-10.1% on average, and bots will often bypass endpoints CAPTCHA is displayed on. This is where real-time Proof of Work invisible challenges powered by Browser Fingerprinting come into play. These are challenges that are hidden from the user where the challenge difficulty varies based on the volatility of metadata based on the user’s browser fingerprint, so bots will experience significantly longer load times and will be discouraged from continuing their abuse due to using a ton of compute power to solve difficult challenges while real users will have a frictionless experience.
+
+I also wrote a [longer form article on Medium](https://roshan-srin.medium.com/web3-security-proof-of-work-invisible-challenges-powered-by-browser-fingerprinting-a0238267e5f4) about this in case you are curious to learn more. Let me know if you have any feedback about my demo or the overall value prop. I'm still building and am continuously looking for feedback, hence this post. (Edit: I should add that the demo linked above doesn't work great on really old phones since the PoW challenges aren't dynamic yet for reducing difficulty on older devices.)
+
+(Second edit: I will say that I've also seen rate limiting as a solution but that's not a great solution if multiple users share the same IP.)",1.0,5,0,5
+5,websec,Read Inbox Via XSS,"Perform XSS attack using the Referer field of a HTTP request and read inbox of the target using JavaScript's XMLHttpRequest.
+
+[https://0xma.com/hacking/stacked\_xss.html](https://0xma.com/hacking/stacked_xss.html)",0.81,3,0,3
+6,websec,Tracking Modified Selenium ChromeDriver,"As always in security, attackers try all kinds of things to avoid being detected. We wrote a [blog post](https://datadome.co/bot-detection/tracking-modified-selenium-chromedriver/) about attackers that modify Selenium Chrome to avoid traditional bot detection techniques. 
+
+Here’s how it works: 
+
+Selenium is a technology that uses code to instrument browsers. It is popular among bot developers because it’s been around for nearly 2 decades and works on various browsers—Chrome, Firefox, Opera, and Safari
+
+We tracked modified selenium using side effects engendered by their changes. This helps us understand the activity of bots doing a lot of scraping on e-commerce sites, some sneaker bots as well as fake influencers.
+
+Feel free to ask me any questions. I’ll try to answer my best – without divulging any detection secrets, of course! 
+
+Disclaimer: I work at DataDome (publisher of the article linked), but I wanted to share because the topic is relevant and timely.",1.0,5,0,5
+7,websec,Interesting SQL Injection Attack By Modifying User Profile [CTF &amp; Bug Bounty],"This page demonstrates how to perform a second order sql injection by modifying the username in the profile page and seeing the results of the sql injection in a completely different page. It might prove useful in some CTF competitions or even bug bounty programs.
+https://0xma.com/hacking/earlyaccess_sql_injection.html",0.86,5,0,5
+8,websec,Help: using a vulnerability,"Hi!
+
+I have a site which I want to include as an iframe in another site. I found that this site's protections are the referrer header and a Google captcha v2.
+
+To bypass this, I tried creating a proxy server that redirects the requests and modifies the referrer, this partially works - I do get access to the site, but at some point in the code flow it stops working, from what I've seen it looks like maybe the google captcha has its way to get my real referer and the site checks it.
+
+Another thing I found is that if the referrer is localhost, it works, so when I put the site in an iframe in my site that was running on localhost, it worked - maybe this can be used somehow?
+
+Any ideas?
+
+If anyone is interested in seeing the actual site and researching it I would love to brainstorm on discord or just in a private chat here :)",0.6,1,0,1
+9,websec,Nemesida WAF Free – free Nginx WAF with the minimum False Positive and amazing Web visualisation,,0.86,5,0,5
+10,websec,Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql,,0.82,7,0,7
+11,websec,"Question: ""Hiding"" a private website behind a VPN","Hello every body,
+
+I have previously hosted a website on my home network and configured an OpenVPN server to allow me access to my home network and that locally hosted website. So essentially that local webserver doesn't directly face the internet, but a client with the OpenVPN config can access that webserver.
+
+Unfortunately I need to host some sensitive personal information on a VPS running Apache through Vultr and I was wondering if I were able to use the same approach to add some extra security to limit access to the VPS to clients with the VPN config. If I can, what would be the best way to approach to this?
+
+Please let me know if this should be on a different sub (if it should be, sorry for posting here!)
+
+
+Thanks from NZ",0.86,5,0,5
+12,websec,XSS in 500 Internal Server Error HTTP Response?,"When a site return 500 Internal Server Error with the whole headers in it including User-Agent
+
+HTTP Response
+
+    HEADERS
+    =======
+    ...
+    User-Agent: Mozilla &lt;script&gt;alert(1)&lt;/script&gt;
+    ...
+
+Does this consider as a valid XSS finding? Burp Suite Pro says this is certain, however I did not get any popup though with this payload on web browser. All I get is bunch of error message with complete HTTP HEADERS at the bottow of the browser.",1.0,5,0,5
+13,websec,Passing secrets over HTTPS ?,"Would you?
+
+Many say store secrets like API keys in env variables.   Threats include env dumps on the server and accidental commits to code repositories. 
+
+An alternative is to store secrets in an encrypted database and pass them using HTTPS meaning they only need to exist in memory on the server.
+
+There are services that offer the latter. Do you use them? What extra things do they do beyond encrypted database, use of HTTPS and rotating keys to ensure security?",1.0,5,0,5
+14,websec,How To Build An E-Authentication System Using OTP (One Time Password),,0.75,2,0,2
+15,websec,Cybersecurity and Compliance,"[https://forms.gle/bk2iWvNfmizhy4oRA](https://forms.gle/bk2iWvNfmizhy4oRA) 
+
+Hey everyone! We are conducting research on the understanding businesses have about cybersecurity and compliance. If anyone has time, it would be great if you could fill out this very very short form.
+
+Thanks!",0.67,2,0,2
+16,websec,Votos positivos,"Gosto da progressão deste website, a cada dia tem conseguido ajudar muitas gente com questões pertinentes.",0.6,1,0,1
+17,websec,How To Use Manual SQL Injection To Penetrate A Database,,0.86,5,0,5
+18,websec,What I need to know as a Web Application Security Junior/Trainee?, I am a computer science student and I would like to try myself in the role of a web application security specialist (more likely this option) or a bug bounty hunter. What should I know and how can I build a learning path if I am a complete beginner? Thanks!,0.81,6,0,6
+19,websec,LinkedIn profile visit restrictions,"LinkedIn when you are not login don't let you visit profiles more than a few times, and then redirect you to login page.
+
+How can I bypass this restriction?",0.57,1,0,1
+20,websec,[1 Minute] Cool Tool Friday: How to Bypass ANY Paywall!,,0.67,2,0,2
+21,websec,Pentest network python tool,"Hey guys. Hope u all well. I just want to show you a project I am working on. It's a nice tool for network administrators and pentesters. Please feel free to leave feedback. Kudos
+
+https://github.com/medpaf/medsec",0.58,2,0,2
+22,websec,Solving WeCTF Include (GET/POST Requests),,0.76,2,0,2
+23,websec,Cisco Hyperflex: How We Got Remote Code Execution Through Login Form and Other Findings,,0.68,4,0,4
+24,websec,Bug reporting and blog writing workshop! Plus it's Pokémon themed :)," Banish your bugs and polish your programs with **Bugédex**, a crash course on bug bounty and reporting by **CSI-VIT and CloudSEK.**
+
+Join us to learn the basics of bug bounty and reporting from professionals at a hands on workshop.
+
+Stand a chance to win exciting prizes for reporting your learnings after the workshop!
+
+🥇 iPad 9th Gen (Worth 30k)
+
+🥈 OnePlus Watch (Worth 15k)
+
+🥉 Google Pixel Buds (Worth 10k)
+
+🏅Amazon Echo Dot (Worth 5k)
+
+🌟 Mi Band 6 (Worth 3.5k)
+
+⭐ 5 Boat Headphones (Worth 2k each)
+
+📅 Date: 3rd October, 2021
+
+⏰ Time: From 12pm onwards
+
+💰 Cost: FREE
+
+Remember, glitches cause stitches!
+
+Register now at: [https://csivitu.typeform.com/bugedex](https://csivitu.typeform.com/bugedex)
+
+For more info: [https://dare2compete.com/o/XlbcYUH](https://dare2compete.com/o/XlbcYUH)
+
+IG: [https://www.instagram.com/csivitu/](https://www.instagram.com/csivitu/)  
+
+
+https://preview.redd.it/x8mozrd7raq71.png?width=1080&amp;format=png&amp;auto=webp&amp;s=dcf8b761b8992518205266b4278ab22128989c10
+
+https://preview.redd.it/s2gaqfd7raq71.png?width=1080&amp;format=png&amp;auto=webp&amp;s=f429c77214e9b54b14c3708c88260cc6a261157c
+
+https://preview.redd.it/qr2bvld7raq71.png?width=1080&amp;format=png&amp;auto=webp&amp;s=6b51025d668e6bccc924f1a9aa0df353b0e9b113",1.0,4,0,4
+25,websec,Very simple example of an SSRF (Server Side Request Forgery) vulnerability,,1.0,5,0,5
+26,websec,URL Filter Subversion,[https://sidechannel.blog/en/url-filter-subversion/index.html](https://sidechannel.blog/en/url-filter-subversion/index.html),0.57,1,0,1
+27,websec,I made a video trying to explain XSS. Please feel free to leave any constructive criticism.,,0.8,6,0,6
+28,websec,"Beginner trying to understand WSDL, SOAP, and SOAP messages for a ""Secure Web Development"" course","I'm a psychologist by training but I work for a tech company and I'm trying to self teach the basics of secure web development. This is quickly becoming something that is beyond my capabilities. Nevertheless, I'm pushing through and currently trying to understand the terminology being used in the section of the course that details common web service attacks. I've taken a step back to try and disambiguate some key terms, and this is how I'm trying to understand it (see table in image).
+
+Is my understanding summarised in that table broadly correct?
+
+This has taken me hours so I'm hoping it doesn't need a gigantic redo. Keep in mind I do not have a technical background. Sorry if my question comes across as stupid or basic.
+
+This is all so that I can later disambiguate types of injection attacks, i.e., attacks on the web browser versus attacks on the web server and attacks on the database server, which I will save for a separate post so as not to complicate this particular question.
+
+&amp;#x200B;
+
+&amp;#x200B;
+
+https://preview.redd.it/w0n1tyklllf71.jpg?width=832&amp;format=pjpg&amp;auto=webp&amp;s=fdac64770fcb1a23d446c9549fd41156c201e9e9",0.88,6,0,6
+29,websec,Burp Suite Certification,,0.94,13,0,13
+30,websec,Union based sql injection,"Hey guys, 
+
+I am not sure how this is working [link](https://imgur.com/a/VeDjDSL). I am trying to learn union based sql injection. The screenshot 1 should display an error because data types are not compatible. However, it displays the row. 
+
+According to port swigger, we can use payloads below to figure out which columns in original query return string data 
+
+    ' UNION SELECT 'a',NULL,NULL,NULL--
+    ' UNION SELECT NULL,'a',NULL,NULL--
+    ' UNION SELECT NULL,NULL,'a',NULL--
+
+So if original column is string, and attacker places 'a' in the same index of column in original query,  no error is there and row is displayed which lets the attacker know which columns are strings. However, if I add 1, which is an int in same index as the string column, it should give an error but the screenshot from w3 school says otherwise",0.81,3,0,3
+31,websec,PoC for a SQL Injection in Rapid7 Nexpose,,0.72,5,0,5
+32,websec,PoC for Cisco ASA unauth XSS,,1.0,3,0,3
+33,websec,Choosing authentication mechanism for SPA + GraphQL. Advice needed.,"I have a project based on java graphql + react on frontend. 
+
+I am choosing methods for authenticating users, and validate their sessions on each request. 
+
+After some research I came to the following schema: 
+
+ \- session stored in cookies (http only, secure, same origin). session signed.  
+ \- csrf token saved in local storage, sent with each request. token associated with user session .
+
+With this schema I have protection from programmatic access to cookies via javascript, and protection from CSRF attack via token.   
+
+
+How do you think, is this enough to have such session validation mechanism using described steps to have protected session validation or I missed something that should be added here?",0.86,5,0,5
+34,websec,ADT vulnerability reporting procedure,"Does anyone know if [adt.com](https://adt.com) has a vulnerability disclosure procedure in place? I checked hackerone, and there is a phony [adt.com](https://adt.com) page which is not affliated with ADT. Bugcrowd also does not have a program for ADT. 
+
+&amp;#x200B;
+
+I found an issue on their platform and I'd like to report it responsibly. Any pointers here would be helpful? Thanks!",0.76,2,0,2
+35,websec,Does CSRF attacks really work?,"I'm studying about CSRF attacks for the first time. I have heard about Same Origin Policy. This might be a silly doubt but I'm not able to understand how CSRF attacks work. Maybe I'm missing something.
+
+Say you're having an active session with the trusted site abc.com which recognises the clients only with the help of Session ID that's stored as cookies on the client's browser. 
+
+Now you click a malicious link say xyz.com that tries to forge requests on your behalf to abc.com. This is CSRF attack. 
+
+But my doubt is Why will the client's browser share the Cookies related to abc.com with xyz.com?
+
+The SOP (Same Origin Policy) states that cookies and all sensitive data is shared among two sites only when:
+- The domain is same
+- The schema is same
+- The port used is same
+
+The first condition itself fails in the above case. So, how will the site xyz.com get the access to abc.com site's cookies?
+
+
+Edit: I found the answer here: [Netsparker](https://www.netsparker.com/blog/web-security/same-site-cookie-attribute-prevent-cross-site-request-forgery/)",0.75,6,0,6
+36,websec,Researching how organizations help developers tackle application security,"Heya everyone,
+
+We are a startup building what we believe is a unique application security solution for public web apps.  But before we go building a bunch of stuff we are conducting a survey to make sure developers would actually want to use a product like that!  So, this is all about us doing product discovery to test our assumptions.   You can check out our survey at [https://www.surveymonkey.com/r/HSL976L](https://www.surveymonkey.com/r/HSL976L)
+
+We are not trying to sell anything at this point, as it's not even fully built yet.  If you have any comments or suggestions please DM me.",1.0,4,0,4
+37,websec,Fully automate your bug bounty with Nuclei and a sprinkle of bash,,0.73,5,0,5
+38,websec,[CVE-2021-28379] Abusing file uploads to get an SSH backdoor,,1.0,8,0,8
+39,websec,Around 200 attacks per minute while testing a HoneyPot,"I was thinking about running an experiment with a HoneyPot which listens to all ports for one week. Turns out I didn't have to wait more than a few seconds it started to get spammed right away with:
+
+\\x03\\x00\\x00+&amp;\\xe0\\x00\\x00\\x00\\x00\\x00Cookie: mstshash=hello\\r\\n\\x01\\x00\\x08\\x00\\x03\\x00\\x00\\x00
+
+Which is a payload to check if an old/compromised version of Microsoft Remote Desktop is running. To be honest I was expecting things like attacks against weak passwords on port 22 or vulnerabilities in WordPress. Anyway I think I will run it for 24 more hours at least to see what other attacks the server receives.
+
+Shameless plug of blog post: [https://everythingtech.dev/2021/03/basic-honeypot-in-python3-8-with-asyncio/](https://everythingtech.dev/2021/03/basic-honeypot-in-python3-8-with-asyncio/)",0.92,10,0,10
+40,websec,Does your WAF have False Positive?,,0.76,6,0,6
+41,websec,Digest authentication with ha1 generated by SHA256Hex on https - is there any known issues with this?,"Looking for advice on whether this approach has any weaknesses or vulnerabilities?  Also, it is generating several 401 errors due to the nonce and thereby more roundtrips? 
+
+Thanks in advance!",0.5,0,0,0
+42,websec,Attacking npm by using Abandoned Resources [LIVE],,0.9,8,0,8
+43,websec,Attack-Aware Web Applications Research,"Hello /r/websec,
+
+I'm looking for participants with web development experience (+18, regardless of skill-level) for my research on attack-aware and self-defending web applications.
+
+The main theme of my research project is in web security but the approach I'm investigating relies heavily on a developer's business logic expertise and intuition of knowing where in the application something wrong/malicious might happen. In order to identify how this expertise and intuition can be best utilized, I'm conducting and planning a series of research activities of which a questionnaire-based survey is my current one.
+
+The survey's goal is to identify your experience with security controls and especially with input validation controls as these can be further utilized for detecting attack attempts. If this sounds interesting to you and you are keen to participate then please follow the link below to access the survey: [https://forms.gle/ex7n9ka6NWLWjPVW7](https://forms.gle/ex7n9ka6NWLWjPVW7)
+
+Your support with your experience as professional web developers is highly appreciated, the results will enhance the research insights in this field and will be used to plan further activities with developers such as a prototype evaluation in a usability study.
+
+For more information or if you have a further questions, please do not hesitate to comment or contact me via DM.
+
+Thank you and kind regards,  
+Tolga",1.0,3,0,3
+44,websec,"Stored, Reflected and DOM-Based XSS, Review the XXSer, XSStrike and Nemesida WAF",,1.0,6,0,6
+45,websec,Nemesida WAF: The WAF That DevOps Love,,0.87,6,0,6
+46,websec,Suspicious Rocket.Chat release?,"This might be a bit tin-foil-hat, but: The changelog entry for [https://github.com/RocketChat/Rocket.Chat/tree/release-0.74.4](https://github.com/RocketChat/Rocket.Chat/tree/release-0.74.4) says that its fixing an exception but the code has nothing regarding exceptions. And in [https://github.com/RocketChat/Rocket.Chat/tree/move-saml-methods](https://github.com/RocketChat/Rocket.Chat/tree/move-saml-methods) there is a commit removing the same stuff, but it seems a bit more hidden.
+
+Can someone explain to me what these commits mean?",1.0,8,0,8
+47,websec,Web Application Security: From Vulnerabilities to Monitoring,,1.0,5,0,5
+48,websec,Does anyone know how to protect robots.txt?,I mean this file is usually open to everyone. And it contains information that might be useful for a hacker. Do you know how to protect it against anyone except search engine crawlers? I am working on a post about it.,0.53,1,0,1
