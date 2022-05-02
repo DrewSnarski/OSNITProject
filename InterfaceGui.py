@@ -177,10 +177,8 @@ def newscrawlclick():
 newscrawlbutton = ttk.Button(buttonframe, text="News Crawler", command=newscrawlclick)
 newscrawlbutton.pack(padx=60,pady=40)
 
-#back/exit button
-backbutton = ttk.Button(buttonframe, text="Back")
-backbutton.pack(padx=50, ipadx=100)
-exitbutton = ttk.Button(buttonframe, text="Exit")
+#exit button
+exitbutton = ttk.Button(buttonframe, text="Exit", command=winD.destroy)
 exitbutton.pack(padx=50)
 #add buttons to grid
 
